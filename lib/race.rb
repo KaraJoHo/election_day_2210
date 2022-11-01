@@ -6,7 +6,7 @@ class Race
     @candidates = []
   end
 
-  # def register_candidate!(candidate_object)
-  #   @candidates << candidate_object
-  # end
+  def register_candidate!(candidate_object)
+    @candidates << candidate_object
+  end
 end
