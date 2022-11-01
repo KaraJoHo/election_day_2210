@@ -9,4 +9,12 @@ RSpec.describe Race do
     expect(race).to be_a(Race)
     expect(race.office).to eq("Texas Governor")
   end
+
+  describe '#candidates' do
+    it 'is an array of candidate objects' do
+      race = Race.new("Texas Governor")
+
+      expect(race.candidates).to eq([])
+    end
+  end
 end
