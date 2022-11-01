@@ -13,4 +13,11 @@ RSpec.describe Candidate do
     expect(diana.name).to eq("Diana D")
     expect(diana.party).to eq(:democrat)
   end
+
+  describe '#votes' do
+    it 'logs the number of votes the candidate recieves' do
+      diana = Candidate.new({name: "Diana D", party: :democrat})
+
+      expect(diana.votes).to eq(0)
+    end
 end
