@@ -5,4 +5,8 @@ class Election
     @year = year
     @races = []
   end
+
+  def add_race(race_object)
+    races << race_object
+  end
 end
