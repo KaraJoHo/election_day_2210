@@ -21,4 +21,19 @@ RSpec.describe Candidate do
       expect(diana.votes).to eq(0)
     end
   end
+
+  describe '#vote_for!' do
+    it 'adds the votes for the candidate to the votes method' do
+      diana = Candidate.new({name: "Diana D", party: :democrat})
+      diana.votes_for!
+      diana.votes_for!
+      diana.votes_for!
+
+      expect(diana.votes).to eq(3)
+
+      diana.votes_for!
+
+      expect(diana.votes).to eq(4)
+    end
+  end
 end
