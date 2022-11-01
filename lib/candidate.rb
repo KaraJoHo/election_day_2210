@@ -10,4 +10,8 @@ class Candidate
   def votes
     num_of_votes.count
   end
+
+  def votes_for!
+    @num_of_votes << 1
+  end
 end
