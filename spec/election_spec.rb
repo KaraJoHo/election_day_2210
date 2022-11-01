@@ -19,7 +19,7 @@ RSpec.describe Election do
       election.add_race(race1)
       election.add_race(race2)
 
-      expect(election.races).to eq([race1], [race2])
+      expect(election.races).to eq([race1, race2])
 
     end
   end
